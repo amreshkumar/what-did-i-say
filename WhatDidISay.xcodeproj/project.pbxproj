@@ -13,6 +13,8 @@
 		826E052525E820C100D208C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 826E052325E820C100D208C9 /* Main.storyboard */; };
 		826E052725E820C200D208C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 826E052625E820C200D208C9 /* Assets.xcassets */; };
 		826E052A25E820C200D208C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 826E052825E820C200D208C9 /* LaunchScreen.storyboard */; };
+		828744D825E8D26F001A7977 /* WDISListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828744D725E8D26F001A7977 /* WDISListener.swift */; };
+		828744DC25E8D27A001A7977 /* WDISSpeaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828744DB25E8D27A001A7977 /* WDISSpeaker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		826E052625E820C200D208C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		826E052925E820C200D208C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		826E052B25E820C200D208C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		828744D725E8D26F001A7977 /* WDISListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDISListener.swift; sourceTree = "<group>"; };
+		828744DB25E8D27A001A7977 /* WDISSpeaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDISSpeaker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		826E051C25E820C100D208C9 /* WhatDidISay */ = {
 			isa = PBXGroup;
 			children = (
+				828744D625E8D25B001A7977 /* Speaker */,
+				828744D525E8D253001A7977 /* Listener */,
 				826E051D25E820C100D208C9 /* AppDelegate.swift */,
 				826E051F25E820C100D208C9 /* SceneDelegate.swift */,
 				826E052125E820C100D208C9 /* ViewController.swift */,
@@ -65,6 +71,22 @@
 				826E052B25E820C200D208C9 /* Info.plist */,
 			);
 			path = WhatDidISay;
+			sourceTree = "<group>";
+		};
+		828744D525E8D253001A7977 /* Listener */ = {
+			isa = PBXGroup;
+			children = (
+				828744D725E8D26F001A7977 /* WDISListener.swift */,
+			);
+			path = Listener;
+			sourceTree = "<group>";
+		};
+		828744D625E8D25B001A7977 /* Speaker */ = {
+			isa = PBXGroup;
+			children = (
+				828744DB25E8D27A001A7977 /* WDISSpeaker.swift */,
+			);
+			path = Speaker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				828744DC25E8D27A001A7977 /* WDISSpeaker.swift in Sources */,
 				826E052225E820C100D208C9 /* ViewController.swift in Sources */,
 				826E051E25E820C100D208C9 /* AppDelegate.swift in Sources */,
+				828744D825E8D26F001A7977 /* WDISListener.swift in Sources */,
 				826E052025E820C100D208C9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
